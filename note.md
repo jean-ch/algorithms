@@ -1,0 +1,3 @@
+- get string length: ```s.length```   
+- get char of string: ```s[index]```  
+- 声明二维数组: ```Array(len).fill(null).map(() => Array(len).fill(0));```   
