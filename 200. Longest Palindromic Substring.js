@@ -1,9 +1,9 @@
-[200. Longest Palindromic Substring](https://www.lintcode.com/problem/longest-palindromic-substring/description)  
-O(n^2)
-找中心点，注意palindrome长度为odd的时候中心点在字符上，even的时候在两个字符中间。所以getPalindrome接收left，right两个参数 
-s[s.length] === undefined
-所以可以不检查s[right]的界限但是要保证left的界限
-```
+/**	
+ * O(n^2)
+ * 找中心点，注意palindrome长度为odd的时候中心点在字符上，even的时候在两个字符中间。所以getPalindrome接收left，right两个参数 
+ * s[s.length] === undefined
+ * 所以可以不检查s[right]的界限但是要保证left的界限
+ */
 /**
  * @param s: input string
  * @return: the longest palindromic substring
@@ -39,4 +39,3 @@ const getlongestPalindrome = function(s, left, right) {
 
     return s.slice(left + 1, right);
 };
-```
